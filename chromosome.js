@@ -1,14 +1,19 @@
 // exported module
  console.log("chromosome.js");
+<<<<<<< HEAD
  var src='chromosome';
  var Log = require("./log");
  
+=======
+
+>>>>>>> 99c09e75db369c6ed3b3290df510c970675eca6b
 // mutable statics
 var trace = '';
 var chromosome = { "bin" : '', fit : 0};		
 var agenes = ['0','1','2','3','4','5','6','7','8','9','+','-','*','/'];
 var chromolen = 5;
 
+<<<<<<< HEAD
 
 function log(msg){
   Log.show(src +": " + msg);
@@ -34,6 +39,9 @@ var add =  function(pool, target){
 var create = function(target){
 		var fn = 'create()';
 		log(fn);
+=======
+var create = function(target, func){
+>>>>>>> 99c09e75db369c6ed3b3290df510c970675eca6b
 		var chromobin =  '';			// genetic sequence
 		var i=0; var ii =0;				// iteration counters
 		var l = chromolen * 4;  		// chromosome length
@@ -60,9 +68,13 @@ var create = function(target){
 		chromosome.bin = chromobin;
 		chromosome.fit = fit;
 		//console.log(chromosome.bin+","+chromosome.fit);
+<<<<<<< HEAD
 		log( fn+"- callback ("+chromosome.bin+")");
 		//func(
 		return chromosome;
+=======
+		func(chromosome);
+>>>>>>> 99c09e75db369c6ed3b3290df510c970675eca6b
 		}
 	
 	
@@ -140,5 +152,8 @@ var decode = function(chromobin){
 				
 				
 exports.create = create;				
+<<<<<<< HEAD
 exports.add = add;				
+=======
+>>>>>>> 99c09e75db369c6ed3b3290df510c970675eca6b
 
